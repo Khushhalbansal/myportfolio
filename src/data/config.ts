@@ -1,7 +1,7 @@
 const config = {
   title: "Khushhal Bansal | Engineering the Future with Code",
 description: {
-  long: "Explore the portfolio of Khushhal Kumar Bansal, a computer science undergraduate and creative web developer focused on building interactive and visually engaging web experiences. With a strong interest in frontend development, animations, and modern JavaScript frameworks, this portfolio showcases learning projects, experiments, and hands-on work that reflect curiosity, creativity, and continuous growth. Let’s build something meaningful together.",
+  long: "Explore the portfolio of Khushhal Kumar Bansal, a computer science undergraduate and creative web developer focused on building interactive and visually engaging web experiences. With a strong foundation in modern web technologies and a passion for creative design.",
   short:
     "Discover the portfolio of Khushhal Kumar Bansal, a creative web developer and computer science student building interactive frontend experiences.",
 },
@@ -39,6 +39,7 @@ description: {
     linkedin: "https://www.linkedin.com/in/khushhal-kumar-bansal-8b1756392/",
     instagram: "https://www.instagram.com/khushhalbansal_/",
     github: "https://github.com/Khushhalbansal",
+    twitter: "https://twitter.com/khushhalbansal",
   },
 };
 export { config };
