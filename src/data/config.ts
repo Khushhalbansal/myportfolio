@@ -1,6 +1,6 @@
 const config = {
   title: "Khushhal Bansal | Engineering the Future with Code",
-description: {
+  description: {
   long: "Explore the portfolio of Khushhal Kumar Bansal, a computer science undergraduate and creative web developer focused on building interactive and visually engaging web experiences. With a strong foundation in modern web technologies and a passion for creative design.",
   short:
     "Discover the portfolio of Khushhal Kumar Bansal, a creative web developer and computer science student building interactive frontend experiences.",
