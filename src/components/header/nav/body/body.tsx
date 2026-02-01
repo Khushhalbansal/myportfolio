@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import styles from "./style.module.scss";
 import { blur, translate } from "../../anim";
 import { Link as LinkType } from "@/types";
 import { cn } from "@/lib/utils";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import FunnyThemeToggle from "@/components/theme/funny-theme-toggle";
 
@@ -27,6 +26,7 @@ export default function Body({
   setIsActive,
 }: BodyProps) {
   const params = useParams();
+  const router = useRouter();
   const [currentHref, setCurrentHref] = useState("/");
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -60,19 +60,37 @@ export default function Body({
       {links.map((link, index) => {
         const { title, href, target } = link;
 
+        const handleClick = () => {
+          setIsActive(false);
+          if (target === "_blank") {
+            window.open(href, "_blank", "noopener,noreferrer");
+          } else {
+            router.push(href);
+          }
+        };
+
+        const handleKeyDown = (e: React.KeyboardEvent) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            handleClick();
+          }
+        };
+
         return (
-          <Link
+          <div
             key={`l_${index}`}
-            href={href}
-            target={target}
             className="cursor-can-hover rounded-lg"
+            onClick={handleClick}
+            onKeyDown={handleKeyDown}
+            role="button"
+            tabIndex={0}
+            aria-label={`Navigate to ${title}`}
           >
             <motion.p
               className={cn(
                 "rounded-lg",
                 currentHref !== href ? "text-muted-foreground" : "underline"
               )}
-              onClick={() => setIsActive(false)}
               onMouseOver={() => setSelectedLink({ isActive: true, index })}
               onMouseLeave={() => setSelectedLink({ isActive: false, index })}
               variants={blur}
@@ -84,7 +102,7 @@ export default function Body({
             >
               {getChars(title)}
             </motion.p>
-          </Link>
+          </div>
         );
       })}
     </div>
