@@ -63,9 +63,16 @@ export default function Body({
         const handleClick = () => {
           setIsActive(false);
           if (target === "_blank") {
-            window.open(href, "_blank");
+            window.open(href, "_blank", "noopener,noreferrer");
           } else {
             router.push(href);
+          }
+        };
+
+        const handleKeyDown = (e: React.KeyboardEvent) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            handleClick();
           }
         };
 
@@ -74,6 +81,9 @@ export default function Body({
             key={`l_${index}`}
             className="cursor-can-hover rounded-lg"
             onClick={handleClick}
+            onKeyDown={handleKeyDown}
+            role="button"
+            tabIndex={0}
           >
             <motion.p
               className={cn(
