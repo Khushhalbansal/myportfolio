@@ -84,10 +84,11 @@ export default function Body({
             onKeyDown={handleKeyDown}
             role="button"
             tabIndex={0}
+            aria-label={`Navigate to ${title}`}
           >
             <motion.p
               className={cn(
-                "rounded-lg cursor-pointer",
+                "rounded-lg",
                 currentHref !== href ? "text-muted-foreground" : "underline"
               )}
               onMouseOver={() => setSelectedLink({ isActive: true, index })}
