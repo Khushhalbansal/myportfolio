@@ -1,4 +1,5 @@
-# 🚀 My Portfolio Website
+# 🚀 My Portfolio Website ( Coming soon !!)
+still workinh on it
 
 Welcome to the repository for my personal portfolio website! This is where I showcase my skills, projects, and a bit of my personality through jaw-dropping 3D animations, slick interactions, and fluid motion. If you're into creative web design, you're in the right place.
 
@@ -29,13 +30,13 @@ Welcome to the repository for my personal portfolio website! This is where I sho
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Khushhalbansal/3d-portfolio
+    git clone https://github.com/Khushhalbansal/myportfolio
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd Portfolio
+    cd myportfolio
     ```
 
 3. Install dependencies:
