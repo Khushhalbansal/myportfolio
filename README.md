@@ -22,7 +22,7 @@ Welcome to the repository for my personal portfolio website! This is where I sho
 
 ### Prerequisites
 
-- Node.js (v14+)
+- Node.js (v18+)
 - npm or yarn
 
 ### Installation
@@ -47,7 +47,24 @@ Welcome to the repository for my personal portfolio website! This is where I sho
     yarn install
     ```
 
-4. Run the development server:
+4. Set up environment variables:
+
+    ```bash
+    cp .env.example .env.local
+    ```
+
+    Open `.env.local` and fill in the values:
+
+    | Variable | Required | Description |
+    |---|---|---|
+    | `RESEND_API_KEY` | Yes (for contact form) | API key from [resend.com](https://resend.com) |
+    | `UMAMI_DOMAIN` | No | Script URL from your Umami analytics instance |
+    | `UMAMI_SITE_ID` | No | Website ID from your Umami dashboard |
+    | `NEXT_PUBLIC_WS_URL` | No | URL of your Socket.io WebSocket server |
+
+    > **Note:** The contact form requires a `RESEND_API_KEY`. The analytics and live-visitors features are optional — leave those variables empty to disable them.
+
+5. Run the development server:
 
     ```bash
     npm run dev
@@ -55,7 +72,7 @@ Welcome to the repository for my personal portfolio website! This is where I sho
     yarn dev
     ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the magic!
+6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the magic!
 
 ## 🚀 Deployment
 
