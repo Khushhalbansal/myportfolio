@@ -824,134 +824,160 @@ export type Project = {
 
 /* ------------------------------ Projects ---------------------------------- */
 const projects: Project[] = [
-  /* ------------------ Research Paper Analyser ------------------ */
+  /* ------------------ Story Spark AI ------------------ */
   {
-    id: "research-paper-analyser",
-    category: "AI / NLP",
-    title: "Research Paper Analyser",
-    src: `${BASE_PATH}/research-paper-analyser/landing.png`,
+    id: "story-spark-ai",
+    category: "AI / Creativity",
+    title: "Story Spark AI",
+    src: `${BASE_PATH}/story-spark-ai/landing.png`,
     screenshots: ["landing.png"],
-    live: "https://github.com/Khushhalbansal/research-paper-analyser",
-    github: "https://github.com/Khushhalbansal/research-paper-analyser",
+    live: "https://storysparkai.vercel.app",
+    github: "https://github.com/Khushhalbansal/story-spark-ai",
     skills: {
       frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.tailwind],
-      backend: [
-        PROJECT_SKILLS.python,
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.express,
-      ],
+      backend: [PROJECT_SKILLS.node],
     },
     content: (
       <div>
         <TypographyP className="font-mono">
-          Research Paper Analyser is an intelligent tool that helps students and
-          researchers quickly understand academic papers by extracting summaries,
-          key insights, and important concepts — saving hours of manual reading.
+          Story Spark AI is an open-source platform designed for creative minds to generate and share multiple story variations from a single prompt. It utilizes AI to help users break through writer's block and explore endless narrative possibilities.
         </TypographyP>
 
         <ProjectsLinks
-          live="https://github.com/Khushhalbansal/research-paper-analyser"
-          repo="https://github.com/Khushhalbansal/research-paper-analyser"
+          live="https://storysparkai.vercel.app"
+          repo="https://github.com/Khushhalbansal/story-spark-ai"
         />
 
         <TypographyH3 className="mt-8">Key Features</TypographyH3>
         <ul className="list-disc ml-6 font-mono">
-          <li>Automatic research paper summarization</li>
-          <li>Keyword and concept extraction</li>
-          <li>Faster literature review workflow</li>
+          <li>Multiple AI story generation variants</li>
+          <li>Sleek, modern UI with dark mode aesthetics</li>
+          <li>Fast and responsive user experience</li>
         </ul>
 
         <SlideShow
           images={[
-            `${BASE_PATH}/research-paper-analyser/landing.png`,
+            `${BASE_PATH}/story-spark-ai/landing.png`,
           ]}
         />
       </div>
     ),
   },
 
-  /* ----------------------- Study Planner ----------------------- */
+  /* ------------------ Bideros ------------------ */
   {
-    id: "study-planner",
-    category: "Productivity",
-    title: "Study Planner",
-    src: `${BASE_PATH}/study-planner/landing.png`,
+    id: "bideros",
+    category: "E-Commerce / Bidding",
+    title: "Bideros",
+    src: `${BASE_PATH}/bideros/landing.png`,
     screenshots: ["landing.png"],
-    live: "https://github.com/Khushhalbansal/Study-Planner-",
-    github: "https://github.com/Khushhalbansal/Study-Planner-",
+    live: "https://bideros.vercel.app",
+    github: "https://github.com/Khushhalbansal/bideros",
     skills: {
-      frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.js],
-      backend: [PROJECT_SKILLS.mongo, PROJECT_SKILLS.node],
+      frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.tailwind],
+      backend: [PROJECT_SKILLS.node],
     },
     content: (
       <div>
         <TypographyP className="font-mono">
-          Study Planner is a productivity-focused application that helps students
-          plan, organize, and track their study schedules efficiently while
-          encouraging discipline and consistency.
+          Bideros is a premium online bidding and auction platform that allows users to place bids on exciting products. The platform boasts a stunning user interface built with high attention to detail and modern web standards.
         </TypographyP>
 
         <ProjectsLinks
-          live="https://github.com/Khushhalbansal/Study-Planner-"
-          repo="https://github.com/Khushhalbansal/Study-Planner-"
+          live="https://bideros.vercel.app"
+          repo="https://github.com/Khushhalbansal/bideros"
         />
 
-        <TypographyH3 className="mt-8">Core Highlights</TypographyH3>
+        <TypographyH3 className="mt-8">Key Features</TypographyH3>
         <ul className="list-disc ml-6 font-mono">
-          <li>Create daily and weekly study plans</li>
-          <li>Track progress and completion</li>
-          <li>Simple, student-friendly UI</li>
+          <li>Real-time auction and bidding system</li>
+          <li>Premium design with elegant typography and neon accents</li>
+          <li>Secure and reliable backend architecture</li>
         </ul>
 
         <SlideShow
           images={[
-            `${BASE_PATH}/study-planner/landing.png`,
+            `${BASE_PATH}/bideros/landing.png`,
           ]}
         />
       </div>
     ),
   },
 
-  /* ----------------------- 3D Portfolio ------------------------ */
+  /* ------------------ Career Pilot ------------------ */
   {
-    id: "3d-portfolio",
-    category: "Portfolio / 3D",
-    title: "3D Interactive Portfolio",
-    src: `${BASE_PATH}/3d-portfolio/landing.png`,
+    id: "career-pilot",
+    category: "AI / EdTech",
+    title: "Career Pilot",
+    src: `${BASE_PATH}/career-pilot/landing.png`,
     screenshots: ["landing.png"],
-    live: "https://github.com/Khushhalbansal/3d-portfolio",
-    github: "https://github.com/Khushhalbansal/3d-portfolio",
+    live: "https://github.com/Khushhalbansal/career-pilot",
+    github: "https://github.com/Khushhalbansal/career-pilot",
     skills: {
-      frontend: [
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.js,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [],
+      frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.tailwind],
+      backend: [PROJECT_SKILLS.node],
     },
     content: (
       <div>
         <TypographyP className="font-mono">
-          A visually immersive 3D portfolio showcasing my projects, skills, and
-          creativity through interactive design, smooth animations, and modern
-          frontend practices — built to stand out.
+          An open-source, AI-powered career platform designed to help candidates land their dream jobs. It features resume optimization, interactive mock interviews, and robust job tracking tools all packed in a beautiful dashboard.
         </TypographyP>
 
         <ProjectsLinks
-          live="https://github.com/Khushhalbansal/3d-portfolio"
-          repo="https://github.com/Khushhalbansal/3d-portfolio"
+          live="https://github.com/Khushhalbansal/career-pilot"
+          repo="https://github.com/Khushhalbansal/career-pilot"
         />
 
-        <TypographyH3 className="mt-8">What Makes It Unique</TypographyH3>
+        <TypographyH3 className="mt-8">Key Features</TypographyH3>
         <ul className="list-disc ml-6 font-mono">
-          <li>3D-inspired interactive UI</li>
-          <li>Smooth transitions & animations</li>
-          <li>Modern developer-focused design</li>
+          <li>AI resume analysis and optimization</li>
+          <li>Interactive mock interview simulator</li>
+          <li>Comprehensive job application tracking</li>
         </ul>
 
         <SlideShow
           images={[
-            `${BASE_PATH}/3d-portfolio/landing.png`,
+            `${BASE_PATH}/career-pilot/landing.png`,
+          ]}
+        />
+      </div>
+    ),
+  },
+
+  /* ------------------ Civitas Portal ------------------ */
+  {
+    id: "civitas-portal",
+    category: "Civic-Tech",
+    title: "Civitas Portal",
+    src: `${BASE_PATH}/civitas-portal/landing.png`,
+    screenshots: ["landing.png"],
+    live: "https://github.com/Khushhalbansal/civitas-portal",
+    github: "https://github.com/Khushhalbansal/civitas-portal",
+    skills: {
+      frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.tailwind],
+      backend: [PROJECT_SKILLS.node],
+    },
+    content: (
+      <div>
+        <TypographyP className="font-mono">
+          Civitas Portal is a Civic-Tech AI Election Assistant powered by Gemini 2.0 Flash and Firebase. Designed to educate and assist voters by providing accurate election data, candidate profiles, and an interactive AI chat interface.
+        </TypographyP>
+
+        <ProjectsLinks
+          live="https://github.com/Khushhalbansal/civitas-portal"
+          repo="https://github.com/Khushhalbansal/civitas-portal"
+        />
+
+        <TypographyH3 className="mt-8">Key Features</TypographyH3>
+        <ul className="list-disc ml-6 font-mono">
+          <li>Intelligent AI election assistant (Gemini 2.0 Flash)</li>
+          <li>Comprehensive candidate and election data</li>
+          <li>Robust architecture tested with 30 unit tests</li>
+        </ul>
+
+        <SlideShow
+          images={[
+            `${BASE_PATH}/civitas-portal/landing.png`,
           ]}
         />
       </div>
